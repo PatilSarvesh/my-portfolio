@@ -1,0 +1,128 @@
+%-------------------------------------------------------------------------------
+% Sarvesh Patil - Resume
+% One-column LaTeX layout based on Sarvesh_Patil_Harman.pdf.
+% Compile with pdfLaTeX or Tectonic.
+%-------------------------------------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.48in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fontawesome5}
+\usepackage[hidelinks,pdfnewwindow=true]{hyperref}
+\usepackage{microtype}
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\urlstyle{same}
+
+\titleformat{\section}
+  {\large\scshape\raggedright}
+  {}{0em}{}
+  [\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+\setlist[itemize]{leftmargin=1.35em, itemsep=0.5pt, topsep=1.5pt, parsep=0pt, partopsep=0pt}
+
+\newcommand{\linked}[2]{\href{#1}{\underline{#2}}}
+\newcommand{\externalIcon}{\raisebox{0.15ex}{\,\scriptsize\faExternalLinkAlt}}
+
+\newcommand{\experience}[5]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \href{#1}{\textbf{#2}\externalIcon} & \textbf{#3} \\
+    \textit{#4} & \textit{#5}
+  \end{tabular*}
+}
+
+\newcommand{\project}[4]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \href{#1}{\underline{\textbf{#2}}\externalIcon} \enspace | \enspace \emph{#3} & \textbf{#4}
+  \end{tabular*}
+}
+
+\begin{document}
+
+\begin{center}
+  {\Huge\scshape Sarvesh Patil}\\[-1pt]
+  Bengaluru, Karnataka\\[3pt]
+  \small
+  \linked{tel:+91-9448309720}{\faPhone\ +91-9448309720}\quad
+  \linked{mailto:p.sarvesh.1111@gmail.com}{\faEnvelope\ p.sarvesh.1111@gmail.com}\quad
+  \linked{https://www.linkedin.com/in/patilsarvesh/}{\faLinkedin\ LinkedIn}\quad
+  \linked{https://github.com/PatilSarvesh}{\faGithub\ GitHub}\quad
+  \linked{https://naughty-davinci-145c32.netlify.app/}{Portfolio}
+\end{center}
+
+\section{SUMMARY}
+{\small Software Engineer building backend and cloud-native systems across \textbf{Python, AWS, and .NET}. Currently working in Python and AWS at Maximus GCC, shipping dependable services and practical AI infrastructure with clear contracts, observable behavior, and reliable delivery.}
+
+\section{TECHNICAL SKILLS}
+{\small
+\textbf{Programming Languages:} Python, C\#, TypeScript, JavaScript, SQL\\
+\textbf{Cloud and AWS:} Lambda, Step Functions, S3, Textract, Bedrock, SQS/SNS, EventBridge, Cognito, RDS, KMS, CloudWatch, X-Ray\\
+\textbf{Backend and AI:} ASP.NET Core, .NET, REST APIs, microservices, SQLAlchemy, Node.js, MCP, LLM integration, structured extraction, RAG\\
+\textbf{Data and Delivery:} PostgreSQL, MongoDB, MySQL/Aurora, SQL Server, Qdrant, Git, AWS SAM, Docker\\
+\textbf{Testing:} XUnit, Postman, GitHub Actions, ServiceNow ATF\\
+\textbf{Frontend:} React, Vue.js, Tailwind CSS
+}
+
+\section{EXPERIENCE}
+
+\experience{https://maximus.com}{Maximus GCC}{May 2022 -- Present}{Senior Software Engineer}{Bengaluru, India}
+\begin{itemize}
+  \item Built and deployed Python services for a production, multi-tenant serverless \textbf{Intelligent Document Processing (IDP)} platform on AWS using Lambda, Step Functions, S3, \textbf{Amazon Bedrock}, and Textract.
+  \item Engineered asynchronous Textract and Bedrock orchestration with Step Functions task tokens and SNS, eliminating polling; enforced strict JSON schemas for reliable extraction.
+  \item Implemented KMS ECDSA-signed webhooks, human-in-the-loop review with session locking, and observability through X-Ray, CloudWatch alarms, and Splunk.
+  \item Delivered ModelOps Python workflows and TalentLens features across React/Tailwind and .NET microservices; built MPC Correspondence and provider-credentialing integrations, improving template creation efficiency by \textbf{30\%} and cutting delivery time by \textbf{20\%}.
+\end{itemize}
+
+\experience{https://www.accenture.com/in-en}{Accenture}{Oct 2021 -- May 2022}{Associate Software Engineer (ASE)}{Bengaluru, India}
+\begin{itemize}
+  \item Trained and worked as a ServiceNow developer and ITOM specialist, developing workflows and frontend validations with Glide AJAX that improved efficiency by \textbf{15\%}.
+  \item Implemented and tested pages and workflows with ServiceNow Automated Test Framework (ATF).
+\end{itemize}
+
+\section{PROJECTS}
+
+\project{https://github.com/PatilSarvesh/AgentCargo}{AgentCargo}{TypeScript, PostgreSQL, CLI}{In progress}
+\begin{itemize}
+  \item Building a cross-agent registry and package manager for reusable AI-agent skills with deterministic packaging, integrity verification, versioning, authentication, publishing, and installation.
+\end{itemize}
+
+\project{https://github.com/PatilSarvesh/Bridge}{Bridge}{TypeScript, REST, MCP}{In progress}
+\begin{itemize}
+  \item Building a shared decision and specification control plane for AI-agent teams, centered on durable context, human authority, governed decisions, and auditable continuation.
+\end{itemize}
+
+\project{https://github.com/PatilSarvesh/ShortUrl}{ShortUrl}{C\#, .NET 8, MongoDB, React}{2024}
+\begin{itemize}
+  \item Shipped a URL-shortening product with custom links, expiry, redirect analytics, and a minimal API-backed interface.
+\end{itemize}
+
+\project{https://github.com/PatilSarvesh/CodeFusion}{CodeFusion}{JavaScript, React}{2024}
+\begin{itemize}
+  \item Built a developer toolbox for data conversion, validation, inspection, and repeatable utility workflows across common formats and identifiers.
+\end{itemize}
+
+\section{EDUCATION}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  \href{https://seacet.edu.in/}{\textbf{SEA College of Engineering and Technology (VTU)}\externalIcon} & \textbf{Aug 2017 -- Jun 2021} \\
+  \textit{B.E., Computer Science and Engineering - CGPA: 7.81} & \textit{Bengaluru, India}
+\end{tabular*}
+
+\section{CERTIFICATIONS}
+\begin{itemize}
+  \item Full Stack Web Development - Udemy
+  \item .NET and React Development - Pratian Technologies
+  \item MongoDB Basics
+\end{itemize}
+
+\end{document}

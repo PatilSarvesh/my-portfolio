@@ -1,9 +1,8 @@
 html, body, #root { min-height: 100%; }
 body {
   margin: 0;
-  background: var(--canvas);
-  color: var(--ink);
-  font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #101416;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -23,9 +23,9 @@ const About = () => {
               Hi there! I am
               <strong>&nbsp;Sarvesh Patil</strong>
               <br/>
-              A passionate programmer and a Ethical Hacker, born and brought up in India. I am a Full Stack Web Developer with HTML, CSS, Bootstrap, Php, JavaScript, React.js, Mysql, and Apache server. I have created several projects from scratch.
+              A software engineer from India focused on backend and cloud-native systems. I build reliable APIs, Python services, AWS workflows, and developer tools that stay understandable as they grow.
               <br/>
-              And I have strong knowledge on basics of Information Security, Web application Penetration Testing and Network Penetration Testing.
+              My current work is Python and AWS, with a foundation in C#, .NET, REST APIs, and production automation.
               <br/>
               I am a quick learner and can adapt to the requirements.
               <br/>
@@ -42,21 +42,13 @@ const About = () => {
                   </a>
                 </div>
                 <div>
-                  <a href="https://drive.google.com/file/d/1WKCApe5UoT4TBwbgmOZ2IlTtZyfnOOgg/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  {/* <a href="../../Resume1.pdf" target="_blank" rel="noopener noreferrer"> */}
+                  <a href="/Sarvesh_Patil_Resume.html" target="_blank" rel="noopener noreferrer">
 
                   <Button className="m-2" variant="outline-success" download>
                     My Resume
                   </Button>
                   </a>
                 </div>
-                {/* <div>
-                    <a href={MyPDF} download="Resume1.pdf" target="_blank" rel="noopener noreferrer">
-                      <Button className="m-2" variant="outline-success">
-                        My Resume
-                      </Button>
-                    </a>
-                  </div> */
                 }
                 {/* <div>
                     <a href="https://github.com/PatilSarvesh" target="_blank" rel="noopener noreferrer">
@@ -66,7 +58,7 @@ const About = () => {
                     </a>
                   </div>
                   <div>
-                    <a href="https://www.linkedin.com/in/sarvesh-patil-7a29951a3/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/patilsarvesh/" target="_blank" rel="noopener noreferrer">
                       <Button className="m-2" variant="outline-info">
                         LinkedIn
                       </Button>

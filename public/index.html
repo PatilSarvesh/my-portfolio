@@ -2,20 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="%PUBLIC_URL%/favicon.svg?v=3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="A portfolio website powered by React and Node js" />
-
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet" />
-    <!-- React bootstrap link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/440c4dadc2.js" crossorigin="anonymous"></script>
-    <title>Sarvesh Portfolio</title>
+    <meta name="theme-color" content="#e8ede9" />
+    <meta name="description" content="Sarvesh Patil is a Senior Software Engineer building backend systems, APIs, developer tools, and cloud-native workflows with Python and AWS." />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("portfolio-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var useDarkTheme = savedTheme === "dark" || (!savedTheme && prefersDark);
+          if (useDarkTheme) {
+            document.documentElement.dataset.theme = "dark";
+            document.querySelector('meta[name="theme-color"]').setAttribute("content", "#0f1a1d");
+          }
+          if (savedTheme === "light") document.documentElement.dataset.theme = "light";
+        } catch (error) {}
+      }());
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sarvesh Patil — Systems Index" />
+    <meta property="og:description" content="Backend systems, APIs, developer tools, and cloud-native workflows built with Python and AWS." />
+    <meta property="og:url" content="https://naughty-davinci-145c32.netlify.app/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sarvesh Patil — Systems Index" />
+    <meta name="twitter:description" content="Backend systems, APIs, developer tools, and cloud-native workflows built with Python and AWS." />
+    <title>Sarvesh Patil — Systems Index</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to view this portfolio.</noscript>
     <div id="root"></div>
   </body>
 </html>

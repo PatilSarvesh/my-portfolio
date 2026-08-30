@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sarvesh Patil - Resume</title>
+<style>
+  @page { size: Letter; margin: 0.43in 0.5in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.29;
+    color: #1a1a1a;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 36px;
+  }
+  a { color: #0b4f9c; text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+
+  header { text-align: center; margin-bottom: 5px; }
+  h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .contact { margin-top: 3px; font-size: 9.5px; color: #333; }
+  .contact a { color: #0b4f9c; }
+
+  h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #14203a;
+    border-bottom: 1.2px solid #14203a;
+    padding-bottom: 1px;
+    margin: 8px 0 3px 0;
+  }
+
+  section { margin: 0; }
+  p { margin: 2px 0; }
+  .skills p { margin: 1.5px 0; }
+
+  .entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 4px;
+  }
+  .entry .left { font-weight: 700; }
+  .entry.sub { margin-top: 0; }
+  .entry.sub .left, .entry.sub .right { font-style: italic; font-weight: 400; }
+  .entry .right { white-space: nowrap; font-size: 9.6px; color: #333; }
+
+  ul { margin: 2px 0 2px 0; padding-left: 16px; }
+  li { margin: 1.2px 0; }
+  .proj-head { margin-top: 4px; }
+  .proj-head .name { font-weight: 700; }
+  .proj-head .tech { font-style: italic; color: #444; }
+  strong { font-weight: 700; }
+
+  @media (max-width: 640px) {
+    body { padding: 20px 18px; font-size: 12px; line-height: 1.42; }
+    h1 { font-size: 24px; }
+    .contact { font-size: 11px; line-height: 1.7; }
+    h2 { font-size: 13px; margin-top: 15px; }
+    .entry { gap: 12px; }
+    .entry .right { font-size: 10px; }
+    .entry .right { white-space: normal; text-align: right; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Sarvesh Patil</h1>
+    <div class="contact">
+      Bengaluru, Karnataka, India &nbsp;|&nbsp;
+      +91-9448309720 &nbsp;|&nbsp;
+      <a href="mailto:p.sarvesh.1111@gmail.com" target="_blank" rel="noopener noreferrer">p.sarvesh.1111@gmail.com</a> &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/patilsarvesh/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;|&nbsp;
+      <a href="https://github.com/PatilSarvesh" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;|&nbsp;
+      <a href="https://naughty-davinci-145c32.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>Software Engineer building backend and cloud-native systems across <strong>Python, AWS, and .NET</strong>. Currently working in <strong>Python and AWS</strong> at Maximus GCC on production cloud-native systems, while developing TypeScript and AI-agent infrastructure in personal projects. Shipped a production, multi-tenant document-processing platform using <strong>Amazon Bedrock</strong>, Textract, and Step Functions. Focused on backend, platform, and practical AI systems with clear contracts, observable behavior, and reliable delivery.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Technical Skills</h2>
+    <p><strong>Languages:</strong> Python, C#, TypeScript, JavaScript, SQL</p>
+    <p><strong>Cloud &amp; AWS:</strong> Lambda, Step Functions, S3, Textract, Bedrock, SQS/SNS, EventBridge, Cognito, RDS, KMS, CloudWatch, X-Ray</p>
+    <p><strong>Backend &amp; AI:</strong> ASP.NET Core, .NET, REST APIs, Microservices, SQLAlchemy, Node.js, MCP, LLM integration, prompt engineering, structured extraction, RAG</p>
+    <p><strong>Data &amp; Delivery:</strong> PostgreSQL, MongoDB, MySQL/Aurora, SQL Server, Qdrant, Git, AWS SAM, Docker</p>
+    <p><strong>Testing:</strong> XUnit, Postman, GitHub Actions, ServiceNow ATF</p>
+    <p><strong>Frontend:</strong> React, Vue.js, Tailwind CSS</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry"><span class="left">Maximus GCC</span><span class="right">May 2022 - Present</span></div>
+    <div class="entry sub"><span class="left">Senior Software Engineer</span><span class="right">Bengaluru, India</span></div>
+    <ul>
+      <li>Built and deployed Python services for a production, multi-tenant serverless <strong>Intelligent Document Processing (IDP)</strong> platform on AWS using Lambda, Step Functions, S3, <strong>Amazon Bedrock</strong>, and Textract for document classification and structured extraction.</li>
+      <li>Engineered event-driven orchestration with Step Functions task tokens and SNS for long-running Textract/Bedrock jobs, eliminating polling; enforced strict JSON schemas for reliable extraction.</li>
+      <li>Implemented KMS ECDSA-signed webhooks, human-in-the-loop review with session locking, and observability through X-Ray, CloudWatch alarms, and Splunk.</li>
+      <li>Delivered ModelOps Python workflows and TalentLens features across React/Tailwind and .NET microservices behind an Ocelot API gateway.</li>
+      <li>Built MPC Correspondence and provider-credentialing features with UnLayer, Email/SMS approvals, CRM functionality, and NPPES, CAQH, OIG LEIE, and SAM integrations; improved template creation efficiency <strong>30%</strong> and cut delivery time <strong>20%</strong>.</li>
+    </ul>
+
+    <div class="entry"><span class="left">Accenture</span><span class="right">Oct 2021 - May 2022</span></div>
+    <div class="entry sub"><span class="left">Associate Software Engineer (ASE)</span><span class="right">Bengaluru, India</span></div>
+    <ul>
+      <li>Trained and worked as a ServiceNow developer and ITOM specialist, developing workflows and frontend validations with Glide AJAX that improved efficiency <strong>15%</strong>.</li>
+      <li>Implemented and tested pages and workflows with ServiceNow Automated Test Framework (ATF).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="proj-head"><a class="name" href="https://github.com/PatilSarvesh/AgentCargo" target="_blank" rel="noopener noreferrer">AgentCargo</a> &nbsp;|&nbsp; <span class="tech">TypeScript, PostgreSQL, CLI · In progress</span></div>
+    <ul><li>Building a cross-agent registry and package manager for reusable AI-agent skills, with deterministic packaging, integrity verification, versioning, authentication, publishing, and installation across agent hosts.</li></ul>
+    <div class="proj-head"><a class="name" href="https://github.com/PatilSarvesh/Bridge" target="_blank" rel="noopener noreferrer">Bridge</a> &nbsp;|&nbsp; <span class="tech">TypeScript, REST, MCP · In progress</span></div>
+    <ul><li>Building a shared decision and specification control plane for AI-agent teams, centered on durable context, governed decisions, human authority, and auditable workflows.</li></ul>
+    <div class="proj-head"><a class="name" href="https://github.com/PatilSarvesh/ShortUrl" target="_blank" rel="noopener noreferrer">ShortUrl</a> &nbsp;|&nbsp; <span class="tech">C#, .NET 8, MongoDB, React</span></div>
+    <ul><li>Shipped a URL-shortening product with custom links, expiry, redirect analytics, and a minimal API-backed interface.</li></ul>
+    <div class="proj-head"><a class="name" href="https://github.com/PatilSarvesh/CodeFusion" target="_blank" rel="noopener noreferrer">CodeFusion</a> &nbsp;|&nbsp; <span class="tech">JavaScript, React</span></div>
+    <ul><li>Built a developer toolbox for data conversion, validation, inspection, and repeatable utility workflows across common formats and identifiers.</li></ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry"><span class="left"><a href="https://seacet.edu.in/" target="_blank" rel="noopener noreferrer">SEA College of Engineering and Technology (VTU)</a></span><span class="right">Aug 2017 - Jun 2021</span></div>
+    <div class="entry sub"><span class="left">B.E., Computer Science and Engineering - CGPA: 7.81</span><span class="right">Bengaluru, India</span></div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Full Stack Web Development - Udemy</li>
+      <li>.NET &amp; React Development - Pratian Technologies</li>
+      <li>MongoDB Basics</li>
+    </ul>
+  </section>
+
+</body>
+</html>

@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# generated resume exports kept outside the deploy source
+/output/
+/Sarvesh_Patil_Harman.pdf
+/Sarvesh_Patil_Resume.html
+/Sarvesh_Patil_Resume.pdf
