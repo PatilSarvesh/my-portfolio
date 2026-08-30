@@ -6,7 +6,7 @@ Content reference for the HTML and PDF exports.
 # Sarvesh Patil
 
 Bengaluru, Karnataka, India<br />
-+91-9448309720 · <a href="mailto:p.sarvesh.1111@gmail.com" target="_blank" rel="noopener noreferrer">p.sarvesh.1111@gmail.com</a> · <a href="https://www.linkedin.com/in/patilsarvesh/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/PatilSarvesh" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://naughty-davinci-145c32.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
++91-9448309720 · <a href="mailto:p.sarvesh.1111@gmail.com" target="_blank" rel="noopener noreferrer">p.sarvesh.1111@gmail.com</a> · <a href="https://www.linkedin.com/in/patilsarvesh/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/PatilSarvesh" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://sarvesh-patil.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
 
 ## Summary
 

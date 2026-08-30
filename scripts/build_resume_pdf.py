@@ -160,7 +160,7 @@ def build():
         ("p.sarvesh.1111@gmail.com", "mailto:p.sarvesh.1111@gmail.com", "\uf0e0", "FA-Solid"),
         ("LinkedIn", "https://www.linkedin.com/in/patilsarvesh/", "\uf08c", "FA-Brands"),
         ("GitHub", "https://github.com/PatilSarvesh", "\uf09b", "FA-Brands"),
-        ("Portfolio", "https://naughty-davinci-145c32.netlify.app/", None, None),
+        ("Portfolio", "https://sarvesh-patil.netlify.app/", None, None),
     ]
     widths = []
     for label, _, icon, icon_font in header_items:
